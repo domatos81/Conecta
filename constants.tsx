@@ -26,7 +26,7 @@ export const ACCESS_TOOLS: AccessTool[] = [
     id: 'tms-cloud',
     title: 'TMS Cloud',
     description: 'Sistema de gestão de transportes e logística. Acesso via RDWeb.',
-    url: 'https://cloudtms.senior.com.br/RDWeb/Pages/en-US/login.aspx',
+    url: 'https://cloudtms.senior.com.br/RDWeb/webclient/',
     category: Category.CORE,
     icon: Truck,
     colorClass: 'text-green-400 group-hover:text-green-300',
@@ -61,6 +61,16 @@ export const ACCESS_TOOLS: AccessTool[] = [
     category: Category.ADMIN,
     icon: ShieldCheck,
     colorClass: 'text-yellow-400 group-hover:text-yellow-300',
+    badge: 'Admin'
+  },
+  {
+    id: 'gestao-ti',
+    title: 'Gestão Senior Cloud',
+    description: 'Painel de gestão de TI e acessos da Senior Cloud.',
+    url: 'https://gestao.seniorcloud.com.br/auth/login',
+    category: Category.ADMIN,
+    icon: Server,
+    colorClass: 'text-indigo-400 group-hover:text-indigo-300',
     badge: 'Admin'
   },
 
