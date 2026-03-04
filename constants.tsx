@@ -96,8 +96,8 @@ export const ACCESS_TOOLS: AccessTool[] = [
 ];
 
 export const LOGOS = {
-  terca: "https://i.imgur.com/vHqQWqM.png", 
+  terca: "https://github.com/domatos81/Conecta/raw/main/Prancheta%20111.png", 
   terca_full: "https://image.pollinations.ai/prompt/Logo%20Terca%20Zilli%20Armazens%20blue%20green?width=300&height=100&nologo=true",
-  tercalog: "https://image.pollinations.ai/prompt/Logo%20Tercalog%20green%20black?width=300&height=100&nologo=true",
-  conecta: "https://image.pollinations.ai/prompt/Logo%20Conecta%20C%20cyan?width=100&height=100&nologo=true"
+  tercalog: "https://github.com/domatos81/Conecta/raw/main/tercalog%20logo.png",
+  conecta: "https://github.com/domatos81/Conecta/raw/main/Prancheta%202.png"
 };
