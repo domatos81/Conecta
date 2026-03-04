@@ -16,7 +16,7 @@ export const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose, onLogin
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Simple mock password for demo purposes
-    if (password === 'admin123') {
+    if (password === 'TercaAdmin2026') {
       onLogin();
       setPassword('');
       setError('');
@@ -46,7 +46,6 @@ export const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose, onLogin
         <form onSubmit={handleSubmit} className="p-6">
           <p className="text-slate-400 mb-6 text-sm">
             Área exclusiva para gestão do portal. Insira a senha administrativa para continuar.
-            <br/><span className="text-xs text-slate-500 mt-2 block">(Dica: a senha é admin123)</span>
           </p>
           
           <div className="mb-6">
