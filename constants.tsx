@@ -26,7 +26,7 @@ export const ACCESS_TOOLS: AccessTool[] = [
     id: 'tms-cloud',
     title: 'TMS Cloud',
     description: 'Sistema de gestão de transportes e logística. Acesso via RDWeb.',
-    url: 'https://cloudtms.senior.com.br/RDWeb/webclient/',
+    url: 'https://tauri.seniorcloud.com.br',
     category: Category.CORE,
     icon: Truck,
     colorClass: 'text-green-400 group-hover:text-green-300',
