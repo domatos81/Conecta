@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowLeft, Plus, Trash2, Edit2, Save, X } from 'lucide-react';
+import { ArrowLeft, Plus, Trash2, Edit2, Save, X, ShieldAlert, Users, ExternalLink } from 'lucide-react';
 import { NewsItem } from '../types';
 
 interface AdminPanelProps {
@@ -79,6 +79,36 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({ news, setNews, onBack })
             <Plus size={20} />
             Novo Aviso
           </button>
+        </div>
+
+        {/* Restritos TI / Acessos de Admin */}
+        <div className="bg-slate-900 rounded-xl border border-slate-800 overflow-hidden mb-8">
+          <div className="p-6 border-b border-slate-800 flex items-center gap-2">
+            <ShieldAlert className="text-red-400" size={22} />
+            <div>
+              <h2 className="text-lg font-semibold text-white">Ferramentas de TI & Acessos Restritos</h2>
+              <p className="text-sm text-slate-400 mt-1">Links de administração totalmente restritos a administradores de sistema.</p>
+            </div>
+          </div>
+          <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <a 
+              href="https://ocweb08s1p.seniorcloud.com.br:30151/SeniorMonitorCenter/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center justify-between p-4 bg-slate-950/40 border border-slate-800/80 hover:border-red-500/50 hover:bg-slate-900 transition-all rounded-xl group"
+            >
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-lg bg-red-500/10 text-red-400 flex items-center justify-center">
+                  <Users size={22} />
+                </div>
+                <div>
+                  <h3 className="font-bold text-slate-200 group-hover:text-red-400 transition-colors">Derrubar Usuários ERP</h3>
+                  <p className="text-xs text-slate-400 mt-1">Senior Monitor Center - Gerenciar sessões e desconectar usuários.</p>
+                </div>
+              </div>
+              <ExternalLink size={18} className="text-slate-500 group-hover:text-red-400 transition-colors" />
+            </a>
+          </div>
         </div>
 
         <div className="bg-slate-900 rounded-xl border border-slate-800 overflow-hidden">
