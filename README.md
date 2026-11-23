@@ -4,6 +4,8 @@
 
 # Run and deploy your AI Studio app
 
+A Central de Ajuda para ERP G5, HCM e TMS pesquisa uma base local, sem API de IA. Veja [o guia de manutenção e implantação](docs/CENTRAL_AJUDA.md).
+
 This contains everything you need to run your app locally.
 
 View your app in AI Studio: https://ai.studio/apps/eb730aba-1790-4c5e-89d5-142381367f8b

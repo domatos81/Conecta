@@ -5,6 +5,7 @@ import { AccessCard } from './components/AccessCard';
 import { NewsFeed } from './components/NewsFeed';
 import { AdminPanel } from './components/AdminPanel';
 import { LoginModal } from './components/LoginModal';
+import { KnowledgeCenter } from './components/KnowledgeCenter';
 import { Category, AccessTool, NewsItem } from './types';
 
 // Mock data for NewsFeed
@@ -186,6 +187,9 @@ function App() {
                 <p className="mt-2 text-lg text-slate-400 max-w-2xl">
                   Centralize suas operações. Acesse todas as ferramentas Senior, gestão de usuários e documentação em um único lugar.
                 </p>
+                <a href="#central-ajuda" className="inline-flex items-center gap-2 mt-5 rounded-lg border border-cyan-700 bg-cyan-950/50 px-4 py-3 text-conecta-cyan hover:bg-cyan-900/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-conecta-cyan">
+                  <Search size={18} aria-hidden="true" /> Buscar ajuda sobre ERP, HCM e TMS
+                </a>
               </div>
             </div>
             
@@ -229,6 +233,7 @@ function App() {
             </div>
           )}
         </div>
+        <div className="mt-16"><KnowledgeCenter /></div>
       </main>
 
       {/* Footer */}
